@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mozzarella</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        border: solid;
+        border-radius: 10px;
+        font-size: 40px;
+        margin: 0 auto;
+        padding: 25px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 35px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 25px;
+        line-height: 38px;
+        margin: 20px 25px;
+      }
+      a {
+        display: block;
+        color: white;
+        font-size: 15px;
+        margin: 15px 25px;
+      }
+      button {
+        display: block;
+        color: white;
+        background: #808b97;
+        font-size: 35px;
+        margin: auto;
+        padding: 15px 25px;
+        border: 2px solid #808b97;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: white;
+        color: #808b97;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        font-size: 20px;
+        margin: 30px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #b1bed5;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love cheese !</h1>
+      <h2>Especially Mozzarella 😻</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/889/original/mozzarella.jpg?1705438483"
+        alt="Picture of mozzarella" />
+      <hr />
+      <p>
+        <strong>Mozzarella</strong> is a semi-soft non-aged cheese prepared by
+        the <em>pasta filata</em> method with origins from southern Italy. Fresh
+        mozzarella is generally white but when seasoned it turns to a light
+        yellow depending on the animal's diet. Due to its high moisture content,
+        it is traditionally served the day after it is made but can be kept in
+        brine for up to a week or longer when sold in vacuum-sealed packages.
+        Mozzarella is used for most types of pizza and several pasta dishes or
+        served with sliced tomatoes and basil in Caprese salad.
+      </p>
+     <a href="https://en.wikipedia.org/wiki/Mozzarella" target="_blank"
+        >Read on WIKIPEDIA</a
+      >
+      <button>TRY MOZZARELLA</button>
+      <br />
+      <footer>Coding by Viktoriia Morozenko 💞</footer>
+    </div>
+    <script>
+      function personalDetails() {
+            let name = prompt('What is your name?');
+            let email = prompt("What is your email?");
+            if (name.length) {
+                alert("🥰 Thank you, " + name + "! We will be in touch with you!")
+            }  else 
+                alert('🫤 No name, no Mozzarella for you!')
+            }
+
+        let applyButton=document.querySelector('button')
+        applyButton.addEventListener('click', personalDetails);
+    </script>
+  </body>
+</html>
